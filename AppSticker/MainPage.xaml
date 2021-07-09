@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="AppSticker.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppSticker"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <Button Style="{StaticResource BackStyle}" Click="Back_Click" />
+            <Button Style="{StaticResource MenuStyle}" Content="Process" Click="Game_Click" />
+            <Button Style="{StaticResource MenuStyle}" Content="About" Click="Work_Click"/>
+        </StackPanel>
+
+        <Frame Name="MyFrame" Grid.Row="1"/>
+    </Grid>
+</Page>
